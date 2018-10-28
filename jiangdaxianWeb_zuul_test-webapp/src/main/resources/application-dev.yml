@@ -1,14 +1,14 @@
 spring:
   application:
-    name: jiangdaxian-gateway-zuul_test
+    name: jiangdaxian-gateway-zuul_test_1
   profiles: dev
 server:
-  port: 8250
+  port: 3251
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
-      default-zone: http://discovery1:8761/eureka/,http://discovery2:8762/eureka/, http://discovery3:8763/eureka/
+      default-zone: http://dis1:8761/eureka/,http://dis2:8761/eureka/,http://dis3:8761/eureka/
     fetch-registry: true
     register-with-eureka: true
