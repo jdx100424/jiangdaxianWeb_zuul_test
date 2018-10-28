@@ -5,8 +5,8 @@
 			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %p %C %d %L %m%n" />
 		</Console>
 		<RollingRandomAccessFile append="true"
-			fileName="/logs/jiangdaxian-web_zuul_test_4/jiangdaxian-web_zuul_test_4.log"
-			filePattern="/logs/jiangdaxian-web_zuul_test_4/jiangdaxian-web_zuul_test_4.log.%d{yyyy-MM-dd}_%i"
+			fileName="/logs/jiangdaxian-web_zuul_test_5/jiangdaxian-web_zuul_test_5.log"
+			filePattern="/logs/jiangdaxian-web_zuul_test_5/jiangdaxian-web_zuul_test_5.log.%d{yyyy-MM-dd}_%i"
 			immediateFlush="false" name="RollingFile">
 			<PatternLayout>
 				<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %p %C %d %L %m%n</pattern>
