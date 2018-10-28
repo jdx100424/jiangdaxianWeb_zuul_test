@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller("test1")
+@Controller("test2")
 public class PropertiesController {
 	private static final Logger LOG = LoggerFactory.getLogger(PropertiesController.class);
 	
