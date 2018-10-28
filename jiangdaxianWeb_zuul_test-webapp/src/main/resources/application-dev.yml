@@ -2,8 +2,9 @@ spring:
   application:
     name: jiangdaxian-gateway-zuul_test_1
   profiles: dev
+  context-path: test3
 server:
-  port: 3251
+  port: 3253
 eureka:
   instance:
     prefer-ip-address: false

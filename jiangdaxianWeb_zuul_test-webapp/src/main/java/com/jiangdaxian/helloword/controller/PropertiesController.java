@@ -6,14 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller("test2")
+@Controller()
 public class PropertiesController {
 	private static final Logger LOG = LoggerFactory.getLogger(PropertiesController.class);
 	
 	@RequestMapping("/properties")
 	@ResponseBody
 	public String index() {
-		LOG.warn("test2test2");
-		return "test2test2test2test2";
+		LOG.warn("test3test3");
+		return "test3test3test3test3";
 	}
 }
