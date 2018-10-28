@@ -13,7 +13,7 @@ public class PropertiesController {
 	@RequestMapping("/properties")
 	@ResponseBody
 	public String index() {
-		LOG.warn("bbbbbbbbbbbbbbb");
-		return "bbbbbbbbbbbbbbb";
+		LOG.warn("test2test2");
+		return "test2test2test2test2";
 	}
 }
