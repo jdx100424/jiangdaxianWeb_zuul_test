@@ -2,16 +2,15 @@ spring:
   application:
     name: jiangdaxian-gateway-zuul_test_5
   profiles: dev
-  context-path: test5
 server:
   port: 3255
+  context-path: /test5
 eureka:
   instance:
+    appname: jiangdaxian-gateway-zuul_test_5
     prefer-ip-address: false
   client:
     healthcheck:
       enabled: true
     serviceUrl:
-      default-zone: http://dis1:8761/eureka/,http://dis2:8761/eureka/,http://dis3:8761/eureka/
-    fetch-registry: false
-    register-with-eureka: false
+      defaultZone: http://dis1:8761/eureka/,http://dis2:8761/eureka/,http://dis3:8761/eureka/
