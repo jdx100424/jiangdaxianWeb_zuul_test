@@ -9,6 +9,7 @@ eureka:
   instance:
     appname: jiangdaxian-gateway-zuul_test_4
     prefer-ip-address: false
+    hostname: ${hostname}
   client:
     healthcheck:
       enabled: true
