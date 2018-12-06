@@ -10,6 +10,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>jiangdaxianWeb_zuul_test-api</groupId>
 	<artifactId>jiangdaxianWeb_zuul_test-api</artifactId>
+	<version>0.0.1-test4_SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<dependencies>
 
