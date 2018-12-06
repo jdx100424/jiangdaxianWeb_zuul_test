@@ -8,15 +8,10 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>jiangdaxianWeb_zuul_test-service</groupId>
-	<artifactId>jiangdaxianWeb_zuul_test-service</artifactId>
+	<groupId>jiangdaxianWeb_zuul_test-api</groupId>
+	<artifactId>jiangdaxianWeb_zuul_test-api</artifactId>
 	<packaging>jar</packaging>
 	<dependencies>
-		<dependency>
-			<groupId>jiangdaxianWeb_zuul_test-feign</groupId>
-			<artifactId>jiangdaxianWeb_zuul_test-feign</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<type>jar</type>
-		</dependency>
+
 	</dependencies>
 </project>
