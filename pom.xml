@@ -9,6 +9,8 @@
 	<modules>
 		<module>jiangdaxianWeb_zuul_test-webapp</module>
 		<module>jiangdaxianWeb_zuul_test-service</module>
+		<module>jiangdaxianWeb_zuul_test-api</module>
+		<module>jiangdaxianWeb_zuul_test-feign</module>
 	</modules>
 	
 	<properties>
@@ -20,7 +22,6 @@
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-eureka</artifactId>
