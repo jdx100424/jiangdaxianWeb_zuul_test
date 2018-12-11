@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel;
+import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel5;
 import com.jiangdaxian.jdxspringcloud.feign.JdxSpringCloudFeignApi;
 
 import feign.hystrix.FallbackFactory;
@@ -19,7 +19,7 @@ public class JdxSpringCloudFeignFallback implements FallbackFactory<JdxSpringClo
 			public String testCanChangeGitConfigProvider(String arg0) {
 				return "jdx_testCanChangeGitConfigProvider:熔断";
 			}
-			public String testParamJson(JdxSpringCloudProviderModel arg0) {
+			public String testParamJson(JdxSpringCloudProviderModel5 arg0) {
 				return "jdx_testParamJson:熔断";
 			}
 		};
