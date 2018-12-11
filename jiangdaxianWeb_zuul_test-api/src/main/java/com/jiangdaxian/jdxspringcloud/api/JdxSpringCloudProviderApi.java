@@ -8,7 +8,7 @@ import com.jiangdaxian.jdxspringcloud.api.model.JdxSpringCloudProviderModel;
 
 public interface JdxSpringCloudProviderApi {
 	public static final String CONTEXT_PATH = "test4";
-	public static final String SERVICE_ID = "jiangdaxian-gateway-zuul_test_4";
+	public static final String SERVICE_ID = "jiangdaxian-gateway-zuul-test-4";
 
 	/**
 	 * 测试获取可变的在GIT的配置文件值,"jdxInfo"

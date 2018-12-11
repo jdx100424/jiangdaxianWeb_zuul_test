@@ -17,7 +17,7 @@ import com.rule.RibbonConfiguration;
 @EnableCircuitBreaker
 @EnableFeignClients(basePackages = { "com.jiangdaxian" })
 @RibbonClients(value = {
-		@RibbonClient(name = "jiangdaxian-gateway-zuul_test_5", configuration = RibbonConfiguration.class) })
+		@RibbonClient(name = "jiangdaxian-gateway-zuul-test-5", configuration = RibbonConfiguration.class) })
 public class WebApplication {
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(WebApplication.class, args);

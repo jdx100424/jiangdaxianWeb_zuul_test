@@ -20,7 +20,7 @@ public class RibbonConfiguration {
 
 	@Bean
 	public IRule myRule(IClientConfig config) {
-		Log.info("jiangdaxian-gateway-zuul_test_5使用RibbonConfiguration负载均衡算法");
+		Log.info("jiangdaxian-gateway-zuul-test-5使用RibbonConfiguration负载均衡算法");
 		return new MySelfRule();
 	}
 

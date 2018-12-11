@@ -1,6 +1,6 @@
 spring:
   application:
-    name: jiangdaxian-gateway-zuul_test_4
+    name: jiangdaxian-gateway-zuul-test-4
   profiles: dev
   cloud:
     config:
@@ -19,7 +19,7 @@ server:
   context-path: /test4
 eureka:
   instance:
-    appname: jiangdaxian-gateway-zuul_test_4
+    appname: jiangdaxian-gateway-zuul-test-4
     prefer-ip-address: false
     hostname: ${hostname}
   client:
