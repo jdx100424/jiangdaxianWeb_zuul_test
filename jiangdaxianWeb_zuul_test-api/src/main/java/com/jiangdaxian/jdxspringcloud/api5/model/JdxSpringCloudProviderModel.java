@@ -1,4 +1,4 @@
-package com.jiangdaxian.jdxspringcloud.api.model;
+package com.jiangdaxian.jdxspringcloud.api5.model;
 
 import java.io.Serializable;
 

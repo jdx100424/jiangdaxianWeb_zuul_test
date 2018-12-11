@@ -8,8 +8,8 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>jiangdaxianWeb_zuul_test-api</groupId>
-	<artifactId>jiangdaxianWeb_zuul_test-api</artifactId>
+	<groupId>jiangdaxianWeb_zuul_test-api5</groupId>
+	<artifactId>jiangdaxianWeb_zuul_test-api5</artifactId>
 	<version>0.0.1-test5_SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<dependencies>

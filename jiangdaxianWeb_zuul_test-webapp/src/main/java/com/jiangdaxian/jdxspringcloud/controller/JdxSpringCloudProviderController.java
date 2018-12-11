@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.jiangdaxian.helloword.controller.PropertiesController;
-import com.jiangdaxian.jdxspringcloud.api.model.JdxSpringCloudProviderModel;
+import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel;
 
 @RestController()
 public class JdxSpringCloudProviderController {
