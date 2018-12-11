@@ -1,12 +1,17 @@
 package com.jiangdaxian.jdxspringcloud.feign.fallback;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
 import com.jiangdaxian.jdxspringcloud.api.model.JdxSpringCloudProviderModel;
 import com.jiangdaxian.jdxspringcloud.feign.JdxSpringCloudFeignApi;
 
 import feign.hystrix.FallbackFactory;
 
+@Component
 public class JdxSpringCloudFeignFallback implements FallbackFactory<JdxSpringCloudFeignApi> {
-
+	private static final Logger LOG = LoggerFactory.getLogger(JdxSpringCloudFeignFallback.class);
 	private JdxSpringCloudFeignApi jdxSpringCloudFeignApi;
 
 	public JdxSpringCloudFeignFallback() {
@@ -20,7 +25,8 @@ public class JdxSpringCloudFeignFallback implements FallbackFactory<JdxSpringClo
 		};
 	}
 
-	public JdxSpringCloudFeignApi create(Throwable cause) {
+	public JdxSpringCloudFeignApi create(Throwable t) {
+		LOG.error("jdx:"+t.getMessage(),t);
 		return jdxSpringCloudFeignApi;
 	}
 
