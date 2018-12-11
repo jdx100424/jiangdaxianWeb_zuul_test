@@ -1,5 +1,7 @@
 package com.jiangdaxian.jdxspringcloud.controller;
 
+import java.util.Random;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -25,11 +27,17 @@ public class JdxSpringCloudProviderController {
 	 * 获取可变的在GIT的配置文件值
 	 * "jdxInfo"
 	 * @return
+	 * @throws Exception 
 	 */
 	@RequestMapping("jdxSpringCloudProviderController/testCanChangeGitConfigProvider")
 	@ResponseBody
-	public String testCanChangeGitConfigProvider(HttpServletRequest request,@RequestParam("key")String key) {
+	public String testCanChangeGitConfigProvider(HttpServletRequest request,@RequestParam("key")String key) throws Exception {
 		String result = env.getProperty(key, "jdxInfoDefault_jdx");
+		int random = new Random().nextInt(2);
+		LOG.warn("random:" + random);
+		if(random==1) {
+			Thread.sleep(15000);
+		}
 		LOG.warn("JdxSpringCloudController::testCanChangeGitConfig::getJdxInfo result is:{}", result);
 		return "testCanChangeGitConfig,jdxInfo result is:" + result;
 	}
