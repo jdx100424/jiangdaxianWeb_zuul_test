@@ -13,6 +13,12 @@
 	
 	<dependencies>
 		<dependency>
+			<groupId>jiangdaxianWeb_zuul_test-api</groupId>
+			<artifactId>jiangdaxianWeb_zuul_test-api</artifactId>
+			<version>0.0.1-test5_SNAPSHOT</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
 			<groupId>jiangdaxianWeb_zuul_test-service</groupId>
 			<artifactId>jiangdaxianWeb_zuul_test-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
