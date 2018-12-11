@@ -31,7 +31,7 @@ public class JdxSpringCloudComsumerController {
 	
 	
 	/**
-	 * 测试远程调用feign_5的方法，参数为delay，延迟时间会触发熔断机制，熔断为常规熔断，非直接配置在feign
+	 * 参数为delay，延迟时间会触发熔断机制，熔断为常规熔断
 	 * @param request
 	 * @return
 	 * @throws Exception 
@@ -56,7 +56,7 @@ public class JdxSpringCloudComsumerController {
 		return "testGetFeignBy5,result is:" + delayTime;
 	}
 	/**
-	 * testGetFeignBy5AndDelay的熔断方法
+	 * testGetFeignByAndDelay的熔断方法
 	 * @param request
 	 * @param t
 	 * @return
