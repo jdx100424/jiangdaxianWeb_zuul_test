@@ -13,7 +13,7 @@ import com.jiangdaxian.helloword.controller.PropertiesController;
 import com.jiangdaxian.jdxspringcloud.feign.JdxSpringCloudFeignApi;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
-@RestController("jdxSpringCloudComsumerController")
+@RestController()
 public class JdxSpringCloudComsumerController {
 	private static final Logger LOG = LoggerFactory.getLogger(PropertiesController.class);
 
@@ -24,7 +24,7 @@ public class JdxSpringCloudComsumerController {
 	 * 通常测试，熔断在FEIGN里面
 	 * @return
 	 */
-	@RequestMapping("/testGetConfig")
+	@RequestMapping("jdxSpringCloudComsumerController/testGetConfig")
 	@ResponseBody
 	public String testGetConfig(HttpServletRequest request) {
 		String s = jdxSpringCloudFeignApi.testCanChangeGitConfigProvider("jdxInfo");
@@ -38,7 +38,7 @@ public class JdxSpringCloudComsumerController {
 	 * @return
 	 * @throws Exception 
 	 */
-	@RequestMapping("/testGetFeignByAndDelay")
+	@RequestMapping("jdxSpringCloudComsumerController/testGetFeignByAndDelay")
 	@HystrixCommand(fallbackMethod="fallbackTestGetFeignByAndDelay",commandProperties = {
 			@com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty
 			(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3000")})

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jiangdaxian.helloword.controller.PropertiesController;
 import com.jiangdaxian.jdxspringcloud.api.model.JdxSpringCloudProviderModel;
 
-@RestController("jdxSpringCloudProviderController")
+@RestController()
 public class JdxSpringCloudProviderController {
 	private static final Logger LOG = LoggerFactory.getLogger(PropertiesController.class);
 	@Autowired
@@ -26,7 +26,7 @@ public class JdxSpringCloudProviderController {
 	 * "jdxInfo"
 	 * @return
 	 */
-	@RequestMapping("/testCanChangeGitConfigProvider")
+	@RequestMapping("jdxSpringCloudProviderController/testCanChangeGitConfigProvider")
 	@ResponseBody
 	public String testCanChangeGitConfigProvider(HttpServletRequest request,@RequestParam("key")String key) {
 		String result = env.getProperty(key, "jdxInfoDefault_jdx");
@@ -35,7 +35,7 @@ public class JdxSpringCloudProviderController {
 	}
 	
 
-	@RequestMapping("/testParamJson")
+	@RequestMapping("jdxSpringCloudProviderController/testParamJson")
 	@ResponseBody
 	public String testParamJson(HttpServletRequest request, @RequestBody JdxSpringCloudProviderModel jdxSpringCloudProviderModel) {
 		if(jdxSpringCloudProviderModel!=null) {
