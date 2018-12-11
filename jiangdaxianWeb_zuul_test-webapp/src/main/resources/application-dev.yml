@@ -12,10 +12,10 @@ spring:
     stream:
       bindings:
         myOutputJdx33:
-          destination: stream-demo33
+          destination: jdx333333
           group: groupjdx33
         myOutputJdx44:
-          destination: stream-demo44
+          destination: jdx444444
           group: groupjdx44
 
   rabbitmq:
