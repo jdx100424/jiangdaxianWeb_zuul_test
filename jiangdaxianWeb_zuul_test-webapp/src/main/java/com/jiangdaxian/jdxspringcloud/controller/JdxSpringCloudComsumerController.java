@@ -24,7 +24,9 @@ public class JdxSpringCloudComsumerController {
 	 * 通常测试，熔断在FEIGN里面
 	 * @return
 	 */
-	public String testFunctionBreak(HttpServletRequest request) {
+	@RequestMapping("/testGetConfig")
+	@ResponseBody
+	public String testGetConfig(HttpServletRequest request) {
 		String s = jdxSpringCloudFeignApi.testCanChangeGitConfigProvider("jdxInfo");
 		return s;
 	}
