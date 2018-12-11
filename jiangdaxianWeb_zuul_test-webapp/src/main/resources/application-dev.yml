@@ -9,6 +9,18 @@ spring:
       discovery:
         enabled: true
         serviceId: cloud-config-server  
+    stream:
+      bindings:
+        myOutputJdx33:
+          destination: stream-demo33
+          content-type: text/plain
+          group: groupjdx33
+        myOutputJdx44:
+          destination: stream-demo44
+          content-type: application/json
+          group: groupjdx44
+
+       
   rabbitmq:
     host: 172.27.35.6
     port: 5672
