@@ -2,6 +2,18 @@ spring:
   application:
     name: jiangdaxian-gateway-zuul_test_4
   profiles: dev
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        serviceId: cloud-config-server  
+  rabbitmq:
+    host: 172.27.35.6
+    port: 5672
+    username: guest
+    password: guest    
 server:
   port: 3254
   context-path: /test4
@@ -15,3 +27,6 @@ eureka:
       enabled: true
     serviceUrl:
       defaultZone: http://dis1:8761/eureka/,http://dis2:8761/eureka/,http://dis3:8761/eureka/
+management:
+  security:
+    enabled: false  
