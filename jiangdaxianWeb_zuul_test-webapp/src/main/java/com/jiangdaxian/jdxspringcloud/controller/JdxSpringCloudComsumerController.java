@@ -64,6 +64,7 @@ public class JdxSpringCloudComsumerController {
 	 * @return
 	 */
 	public String fallbackTestGetFeignByAndDelay(HttpServletRequest request,Throwable t) {
+		LOG.error("jdx:" + t.getMessage(),t);
 		String result = "testGetFeignByAndDelay触发熔断,方法为fallbackTestGetFeignByAndDelay";
 		return result;
 	}
