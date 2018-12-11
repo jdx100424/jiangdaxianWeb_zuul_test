@@ -12,11 +12,11 @@ spring:
     stream:
       bindings:
         myOutputJdx33:
-          destination: stream-demo33
+          destination: jdx333333
           content-type: text/plain
           group: groupjdx33
         myOutputJdx44:
-          destination: stream-demo44
+          destination: jdx444444
           content-type: application/json
           group: groupjdx44
 
