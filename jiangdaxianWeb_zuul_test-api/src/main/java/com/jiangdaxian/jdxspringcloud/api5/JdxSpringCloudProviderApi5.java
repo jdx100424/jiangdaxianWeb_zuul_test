@@ -4,9 +4,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel;
+import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel5;
 
-public interface JdxSpringCloudProviderApi {
+public interface JdxSpringCloudProviderApi5 {
 	public static final String CONTEXT_PATH = "test5";
 	public static final String SERVICE_ID = "jiangdaxian-gateway-zuul-test-5";
 
@@ -24,5 +24,5 @@ public interface JdxSpringCloudProviderApi {
 	 * @return
 	 */
 	@RequestMapping("/" + CONTEXT_PATH + "/jdxSpringCloudProviderController/testParamJson")
-	public String testParamJson(@RequestBody JdxSpringCloudProviderModel jdxSpringCloudProviderModel);
+	public String testParamJson(@RequestBody JdxSpringCloudProviderModel5 jdxSpringCloudProviderModel);
 }

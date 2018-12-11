@@ -2,7 +2,7 @@ package com.jiangdaxian.jdxspringcloud.api5.model;
 
 import java.io.Serializable;
 
-public class JdxSpringCloudProviderModel implements Serializable {
+public class JdxSpringCloudProviderModel5 implements Serializable {
 
 	/**
 	 * 

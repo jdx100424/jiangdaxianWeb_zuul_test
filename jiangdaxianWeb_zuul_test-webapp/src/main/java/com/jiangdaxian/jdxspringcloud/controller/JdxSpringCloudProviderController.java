@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.jiangdaxian.helloword.controller.PropertiesController;
-import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel;
+import com.jiangdaxian.jdxspringcloud.api5.model.JdxSpringCloudProviderModel5;
 
 @RestController()
 public class JdxSpringCloudProviderController {
@@ -45,7 +45,7 @@ public class JdxSpringCloudProviderController {
 
 	@RequestMapping("jdxSpringCloudProviderController/testParamJson")
 	@ResponseBody
-	public String testParamJson(HttpServletRequest request, @RequestBody JdxSpringCloudProviderModel jdxSpringCloudProviderModel) {
+	public String testParamJson(HttpServletRequest request, @RequestBody JdxSpringCloudProviderModel5 jdxSpringCloudProviderModel) {
 		if(jdxSpringCloudProviderModel!=null) {
 			return "id:" + jdxSpringCloudProviderModel.getId()+ ";  name:" + jdxSpringCloudProviderModel.getName();
 		}else {
